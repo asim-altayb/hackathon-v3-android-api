@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".PostDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="Post Title :  "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Post Date :  "/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="5dp"
+                    android:id="@+id/post_title"
+                    android:textStyle="bold"
+                    android:text="Hello  World"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="15dp"
+                    android:padding="5dp"
+
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/post_date"
+                    android:text="2018-7-13 / 10:52:02 am"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/document_name"
+                android:textSize="13dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:text="Neque porro quisquam est qui dolorem "/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/document_download"
+                android:src="@drawable/ic_menu_share"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:background="#eee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/content"
+                android:textStyle="bold|italic"
+                android:text="What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_comments"
+                android:layout_marginBottom="10dp">
+
+            </ListView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eee"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/comment"
+                    android:textSize="15sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="2dp"
+                    android:hint="write your comment here"
+                    />
+                <Button
+                    android:layout_width="50dp"
+                    android:id="@+id/send_comment"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_menu_send"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
